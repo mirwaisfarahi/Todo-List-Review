@@ -9,11 +9,14 @@ body {
   padding: 130px 0;
 }
 
+.flex {
+  display: flex;
+}
+
 main {
   width: 40%;
   min-width: 450px;
   font-size: 17px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
@@ -25,7 +28,6 @@ main {
 
 #header {
   width: 100%;
-  display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 30px 30px 20px;
