@@ -3,6 +3,7 @@ import LocalStorage from './storage.js';
 import Status from './status.js';
 
 class Operation {
+  
   // Add task function
   static addTodo = (task) => {
     if (task) {
