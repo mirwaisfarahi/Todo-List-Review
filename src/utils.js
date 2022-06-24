@@ -5,9 +5,10 @@ import Status from './status.js';
 class Operation {
   // Add task function
   static addTodo = (task) => {
+    // get data from localstorage
+    let todoList = LocalStorage.getData();
+
     if (task) {
-      // get data from localstorage
-      let todoList = LocalStorage.getData();
       if (todoList == null) {
         todoList = [];
       }
@@ -27,6 +28,8 @@ class Operation {
       // refresh the window
       LocalStorage.reloadPage();
     }
+
+    return todoList;
   }
 
   // renderTodo function
@@ -97,6 +100,8 @@ class Operation {
 
     // refresh the page
     LocalStorage.reloadPage();
+
+    return todos;
   }
 
   // remove Todo
@@ -113,6 +118,8 @@ class Operation {
 
     // refresh the page
     LocalStorage.reloadPage();
+
+    return todos;
   }
 }
 
