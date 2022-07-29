@@ -16,7 +16,7 @@ let newTask = document.querySelector('#new-task');
 // select the clear all completed todos
 const clearCompleted = document.querySelector('#clear-completed');
 
-// add an event listener for the page refresh
+// add an event listener for the page refresh function
 refreshList.addEventListener('click', () => LocalStorage.reloadPage());
 
 // add an event Listener to the form and listen to the submit button
